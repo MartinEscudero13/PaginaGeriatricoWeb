@@ -470,7 +470,12 @@ header {
 .mitad1 {
   width: 70%;
   height: 100%;
-  background-color: #04ad50;
+   background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), /* sombra negra semitransparente */
+      url("ImagenFondoForm/verde.jpg"); /* imagen de fondo */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
   color: white;
   display: flex;
   flex-direction: column;
