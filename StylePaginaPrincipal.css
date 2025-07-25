@@ -515,7 +515,7 @@ header {
 }
 
 .mitad2 img {
-  width: 140%;
+  width: 100%;
   max-width: none;
   border-radius: 10px;
   object-fit: contain;
