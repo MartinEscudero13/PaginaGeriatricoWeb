@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos básicos -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Residencia Alternativa de Cuyo</title>
+
+  <!-- Bootstrap 5 CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+ <!-- Bootstrap 5 JS (para el carrusel) -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="StylePaginaPrincipal.css">
+
+  <!-- Ícono de pestaña -->
+  <link rel="icon" href="ImagenLogo/icono2.png" type="image/x-icon"> 
+
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Script personalizado -->
+  <script src="Script.js" defer></script>
+
+  
+
+  <!-- Fuentes -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="div" id="inicio"></div>
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+    <div class="nav-container">
+      <a href="#inicio">
+        <img src="ImagenLogo/LogoNav-modified.png" alt="Residencia Alternativa de Cuyo WhatsApp" class="imagenNav">
+      </a>
+      <h1 style="text-align: center; font-size: 25px;">Residencia <br>Alternativa de Cuyo</h1>
+      <button class="burger" id="burgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>      
+      <!-- Menú de navegación -->
+      <ul class="menuNav" id="menuNav">
+        <li><a href="#inicio" class="activo inicio">Inicio</a></li>
+        <li><a href="#nosotros">Identidad</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HEADER PRINCIPAL ===== -->
+  <header>
+    
+    <div class="mitad1">
+      <h1>Residencia <br>Alternativa de Cuyo</h1>
+      <p>Un compromiso con el bienestar</p>
+    </div>
+    <div class="mitad2">
+      <img src="ImagenLogo/Logo.png" alt="logo">
+    </div>
+  </header>
+
+  <!-- ===== CONTENIDO PRINCIPAL ===== -->
+  <main>
+
+    <!-- Sección: Misión y Visión -->
+    <section class="Section-mv" id="nosotros">
+      <div class="content-box">
+        <h2 class="section-title2">Misión</h2>
+        <p>En la Residencia Alternativa de Cuyo, nuestra misión es ofrecer un hogar seguro y acogedor para adultos mayores, donde cada persona sea tratada con dignidad y respeto. Nos dedicamos a brindar atención integral y personalizada, adaptada a las necesidades de cada residente. A través de servicios médicos, actividades recreativas y espacios de socialización, buscamos fomentar el bienestar y la felicidad, asegurando que nuestros residentes se sientan valorados y activos en su comunidad.</p>
+      </div>
+      <div class="content-box">
+        <h2 class="section-title2">Visión</h2>
+        <p>Nuestra visión es convertirnos en un referente en el cuidado de adultos mayores en la región de Cuyo, reconocidos por la calidad de nuestros servicios y el compromiso de nuestro equipo. En la Residencia Alternativa de Cuyo, aspiramos a ser un lugar donde el envejecimiento se celebre como una etapa rica en sabiduría y experiencias. Queremos crear un ambiente donde cada residente disfrute de una vida plena, llena de alegría, compañía y un sentido de pertenencia.</p>
+      </div>
+    </section>
+
+    <!-- Banner entre secciones -->
+    <div class="serviciosBanner" id="servicios">
+      <p>Contamos con 2 residencias. <br>
+         Diseñadas para brindar el mejor cuidado, cada una con características y servicios específicos.
+      </p>
+    </div>
+
+    <!-- Sección: Servicios por residencia -->
+    <div class="Servicios">
+
+      <!-- Residencia 1 -->
+      <section class="residencia1">
+        <h1><span id="num">1.</span> Residencia en Rioja 239, Ciudad.</h1>
+
+        <h2 class="section-title">Servicios Incluidos</h2>
+        <div class="content-box-card">
+          <ul>
+            <li>Una visita médica semanal.</li>
+            <li>Una visita nutricional cada 15 días.</li>
+            <li>Enfermería pasiva las 24 horas.</li>
+            <li>Cuidadoras disponibles las 24 horas.</li>
+            <li>Servicio de emergencias a tiempo.</li>
+            <li>Hotelería al 100% (desayuno, almuerzo, merienda y cena).</li>
+            <li>Profesora de gimnasia vespertina.</li>
+            <li>Terapista ocupacional una vez por semana.</li>
+            <li>Servicio de lavandería.</li>
+            <li>Servicio de limpieza.</li>
+            <li>TV por cable.</li>
+            <li>Wi-Fi.</li>
+          </ul>
+        </div>
+
+        <h2 class="section-title">Servicios No Incluidos</h2>
+        <div class="content-box-card">
+          <ul>
+            <li>Medicación.</li>
+            <li>Pañales.</li>
+            <li>Profesionales (kinesiología, fonoaudiología, etc.).</li>
+            <li>Especialidades médicas (psiquiatra, reumatólogo, cardiología, etc.).</li>
+            <li>Peluquería, podología, etc.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Residencia 2 -->
+      <section class="residencia2">
+        <h1><span id="num">2.</span> Residencia en Avelino Maure 2305, Bermejo, Guaymallén.</h1>
+
+        <h2 class="section-title">Servicios Incluidos</h2>
+        <div class="content-box-card">
+          <ul>
+            <li>Una visita médica semanal.</li>
+            <li>Una visita nutricional cada 15 días.</li>
+            <li>Enfermería pasiva las 24 horas.</li>
+            <li>Cuidadoras disponibles las 24 horas.</li>
+            <li>Servicio de emergencias a tiempo.</li>
+            <li>Hotelería al 100% (desayuno, almuerzo, merienda y cena).</li>
+            <li>Profesora de gimnasia vespertina.</li>
+            <li>Terapista ocupacional una vez por semana.</li>
+            <li>Servicio de lavandería.</li>
+            <li>Servicio de limpieza.</li>
+            <li>TV por cable.</li>
+            <li>WiFi.</li>
+            <li>Hidromasaje.</li>
+            <li>Quincho.</li>
+            <li>Piscina.</li>
+          </ul>
+        </div>
+
+        <h2 class="section-title">Servicios No Incluidos</h2>
+        <div class="content-box-card">
+          <ul>
+            <li>Medicación.</li>
+            <li>Pañales.</li>
+            <li>Profesionales (kinesiología, fonoaudiología, etc.).</li>
+            <li>Especialidades médicas (psiquiatra, reumatólogo, cardiología, etc.).</li>
+            <li>Peluquería, podología, etc.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+   <!-- Carrusel con efecto Fade para Residencia Alternativa de Cuyo -->
+<section class="container my-5">
+  <div id="carruselGeriatricoFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner rounded shadow-lg">
+      <div class="carousel-item active">
+        <img src="/ImagenesCarrousel/pexels-olly-3768131.jpg" class="d-block w-100" alt="Ambiente cálido">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Bienvenidos a Residencia Alternativa de Cuyo</h5>
+          <p>Un hogar lleno de amor y atención personalizada.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/ImagenesCarrousel/pexels-pixabay-302083.jpg" class="d-block w-100" alt="Habitaciones confortables">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Instalaciones modernas</h5>
+          <p>Confort, tranquilidad y seguridad en cada espacio.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/ImagenesCarrousel/pexels-rdne-8139115.jpg" class="d-block w-100" alt="Actividades recreativas">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Vida activa y social</h5>
+          <p>Actividades diarias para el bienestar emocional.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botones de control -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carruselGeriatricoFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carruselGeriatricoFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</section>
+<!-- Galería de Fotos - Residencia Alternativa de Cuyo -->
+<section class="container my-5">
+  <h2 class="text-center mb-4">Nuestro Hogar en Imágenes</h2>
+  <div class="row g-3">
+
+    <!-- Foto 1 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <img src="/ImagenesCarrousel/pexels-rdne-8139115.jpg" class="img-fluid rounded shadow-sm" alt="Foto de la residencia">
+    </div>
+
+    <!-- Foto 2 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <img src="/ImagenesCarrousel/pexels-rdne-8139115.jpg" class="img-fluid rounded shadow-sm" alt="Actividades recreativas">
+    </div>
+
+    <!-- Foto 3 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <img src="/ImagenesCarrousel/pexels-rdne-8139115.jpg" class="img-fluid rounded shadow-sm" alt="Habitaciones confortables">
+    </div>
+
+    <!-- Foto 4 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <img src="/ImagenesCarrousel/pexels-rdne-8139115.jpg" class="img-fluid rounded shadow-sm" alt="Espacios verdes">
+    </div>
+
+    <!-- Foto 5 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <img src="/ImagenesCarrousel/pexels-rdne-8139115.jpg" class="img-fluid rounded shadow-sm" alt="Personal capacitado">
+    </div>
+
+    <!-- Foto 6 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <img src="/ImagenesCarrousel/pexels-rdne-8139115.jpg" class="img-fluid rounded shadow-sm" alt="Eventos especiales">
+    </div>
+
+    <!-- Foto 7 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <img src="/ImagenesCarrousel/pexels-rdne-8139115.jpg" class="img-fluid rounded shadow-sm" alt="Salones comunes">
+    </div>
+
+    <!-- Foto 8 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <img src="/ImagenesCarrousel/pexels-rdne-8139115.jpg" class="img-fluid rounded shadow-sm" alt="Área de lectura">
+    </div>
+
+    <!-- Foto 9 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <img src="/ImagenesCarrousel/pexels-rdne-8139115.jpg" class="img-fluid rounded shadow-sm" alt="Terapias de rehabilitación">
+    </div>
+
+    <!-- Foto 10 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <img src="/ImagenesCarrousel/pexels-rdne-8139115.jpg" class="img-fluid rounded shadow-sm" alt="Talleres creativos">
+    </div>
+
+    <!-- Foto 11 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <img src="/ImagenesCarrousel/pexels-rdne-8139115.jpg" class="img-fluid rounded shadow-sm" alt="Comedor confortable">
+    </div>
+
+    <!-- Foto 12 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <img src="/ImagenesCarrousel/pexels-rdne-8139115.jpg" class="img-fluid rounded shadow-sm" alt="Jardín de esparcimiento">
+    </div>
+
+  </div>
+</section>
+
+
+
+    <!-- Sección: Contacto -->
+    <section class="Contacto">
+      <h2 class="contUbica-title" id="contacto">Contacto</h2>
+      <div class="barra-sub"></div>
+      <div class="contenedor-contac">
+
+        <!-- Información de contacto -->
+        <div class="content-box-contact">
+          <div class="qr-box">
+            <img src="QR/QR.jpg" alt="QR WhatsApp" class="qr-img">
+            <p><strong>Teléfono:</strong> <a href="tel:+542615071714">261-5071714</a></p>
+            <p><strong>Email:</strong> 
+              <a href="mailto:residenciaalternativadecuyo@hotmail.com">
+                residenciaalternativadecuyo@hotmail.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Botón de WhatsApp -->
+        <div class="contact2">
+          <p class="mensaje-info">Para Comunicarte hace click aquí abajo</p>
+          <div class="barra-sub2"></div>
+          <div class="flecha" style="font-size: 60px;">&#x2193;</div>
+          <div class="info-box">
+            <a href="https://wa.me/message/EBTAVH2U4L47L1" target="_blank" class="whatsapp-link">
+              <img src="ImagenLogo/Solo Logo Paloma 300px 200xp.png" alt="WhatsApp" class="whatsapp-img">
+              <div class="contenidobox">
+                <p id="p1">~Residencia Alternativa de Cuyo~</p>
+                <p>Official Business Account</p>
+                <a href="https://wa.me/message/EBTAVH2U4L47L1" target="_blank" style="text-decoration: none;">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" style="width: 15px; height: 15px; vertical-align: middle;">
+                  whatsapp.com
+                </a>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text">
+      <p>Para más información, por favor, completa el formulario o comunícate con nosotros.</p>
+    </div>
+       <!-- Botón de flecha -->
+    <div class="flecha-abajo">
+      <button id="toggle-form"> 
+       <i class="bi bi-chevron-down"></i>
+      </button>
+     </div>
+    </section>
+    
+    <!-- Sección: Formulario -->
+     <div class="ContainerForm" id="formulario-box">
+       <div class="info-contacto">
+        <h3>Estamos para ayudarte</h3>
+        <p>Si tenés dudas, querés agendar una visita o simplemente saber más sobre nuestros servicios, no dudes en escribirnos. Nuestro equipo responderá lo antes posible.</p>
+      </div>
+    <section class="formulario" id="formulario-container">
+      <form id="contact-form" method="post">
+        <fieldset>
+          <legend>Datos del Contacto</legend>
+          
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="phone">Teléfono de contacto:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </fieldset>
+        
+        <fieldset>
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </fieldset>
+        
+        <button type="submit">
+          <i class="bi bi-send"></i> Enviar mensaje
+        </button>
+      </form>
+    </section>
+  </div>
+    <!-- Sección: Ubicación -->
+    <section class="Ubicacion">
+      <h2 class="contUbica-title" id="ubicacion">Ubicación</h2>
+      <div class="barra-sub"></div>
+      <div class="contenedor-ubi">
+
+        <!-- Ubicación 1 -->
+        <div class="content-box-ubication">
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.454711043725!2d-68.836287!3d-32.888464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e094d64c2c49f%3A0x64f32d9f7b49e28c!2sRioja%20239%2C%20M5500EOE%20Mendoza!5e0!3m2!1ses!2sar!4v1712597825626!5m2!1ses!2sar"
+          width="500px" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <h4 class="contUbica-subtitle">Residencia en Rioja 239, Ciudad.</h4>
+          <div class="barra-sub"></div>
+        </div>
+
+        <!-- Ubicación 2 -->
+        <div class="content-box-ubication2">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.795936137353!2d-68.792117!3d-32.879267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0bf68c9d9a1d%3A0x87d0c6d22a8e5a42!2sAvelino%20Maure%202305%2C%20M5521%20Bermejo%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1712597904991!5m2!1ses!2sar"
+           width="500px" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe> 
+          <h4 class="contUbica-subtitle">Residencia en Avelino Maure 2305, Bermejo, Guaymallén.</h4>
+          <div class="barra-sub"></div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal de éxito -->
+  <div id="modalExito" class="custom-modal">
+    <div class="custom-modal-content">
+      <div class="checkmark-wrapper">
+        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+          <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+          <path class="checkmark-check" fill="none" d="M14 27l7 7 17-17"/>
+        </svg>
+      </div>
+      <h2>¡Mensaje enviado!</h2>
+      <p>Gracias por ponerte en contacto. Te responderé pronto.</p>
+      <button onclick="cerrarModal()">Cerrar</button>
+    </div>
+  </div>
+  
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 <strong>Residencia Alternativa de Cuyo</strong>. Todos los derechos reservados.</p>
+    <p>Visítanos en Instagram: 
+      <a href="https://www.instagram.com/residencia_alternativa_de_cuyo" target="_blank" class="footer-link">
+        @residencia_alternativa_de_cuyo
+      </a>
+    </p>
+    <p class="developer">Desarrollado por <strong>MartinDeveloperWeb</strong></p>
+  </footer>
+  
+  <script>
+    const toggleBtn = document.getElementById('toggle-form');
+    const formulario = document.getElementById('formulario-container');
+  
+    toggleBtn.addEventListener('click', () => {
+      formulario.classList.toggle('show');                // Muestra u oculta el formulario
+      toggleBtn.classList.toggle('rotate');               // Rota la flecha
+    });
+  </script>  
+</body>
+</html>
+
+<!--   .mitad1 {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), /* sombra negra semitransparente */
+      url("ImagenFondoResidencia/verde.jpg"); /* imagen de fondo */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  } -->
